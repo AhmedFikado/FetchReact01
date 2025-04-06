@@ -8,6 +8,10 @@ interface EmployeeCardProps {
     picture: {
       medium: string;
     };
+    location: {
+      city: string;
+      country: string;
+    };
   };
 }
 
@@ -17,9 +21,10 @@ function EmployeeCard({ employee }: EmployeeCardProps) {
       <img src={employee.picture.medium} alt={employee.name.first} />
       <figcaption>
         <strong>
-          {employee.name.first} {employee.name.last}
+          {employee.name.first} {employee.name.last}{" "}
         </strong>
-        {employee.email}
+        {employee.email}, born in {employee.location.country},{" "}
+        {employee.location.city}
       </figcaption>
     </figure>
   );

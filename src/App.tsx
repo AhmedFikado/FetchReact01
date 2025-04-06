@@ -11,6 +11,10 @@ const sampleEmployee = {
   picture: {
     medium: "https://randomuser.me/api/portraits/med/men/40.jpg",
   },
+  location: {
+    country: "France",
+    city: "Bordeaux",
+  },
 };
 
 function App() {
